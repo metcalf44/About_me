@@ -1,9 +1,55 @@
-* {
+html {
     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
     margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    color: #404040;
+    text-align: center;
 }
 
 /* typography */
+
+h1 {
+    font-size: 2.25em;
+    font-weight: 300;
+    color: #b8b8b8;
+    margin: 0;
+}
+
+/* intro */
+
+.intro {
+    background-color: #646363;
+    background-image: url(https://picsum.photos/200/300?grayscale);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+/* main -content section */
+
+.main-content {
+    padding: 2em 1.25em;
+}
+
+.intro > *,
+.main-content > * {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
