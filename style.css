@@ -9,7 +9,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.4;
     color: #404040;
     text-align: center;
@@ -61,8 +61,11 @@ h1 {
     justify-content: center;
 }
 
+/* navigation */
+
 .nav {
     background-color: #404040;
+    letter-spacing: .75px;
     width: 100%;
     margin: 0 auto;
     padding: .5em;
@@ -78,14 +81,12 @@ h1 {
 }
 
 .nav-item {
-    /* margin: 0 1em; */
     text-transform: uppercase;
 }
 
 .nav-link {
     text-decoration: none;
     color: #fff;
-    /* padding: .25em 0; */
 }
 
 .nav-link,
@@ -109,6 +110,118 @@ footer {
     max-width: 100%;
     opacity: .5;
 }
+
+/* Form */
+
+form {
+    margin: .5em auto;
+    width: 100%;
+    height: 50%;
+}
+
+.form-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; 
+}
+
+::-webkit-input-placeholder { 
+    color: rgb(153, 153, 153);
+    opacity: .75;
+  }
+  ::-moz-placeholder { 
+    color: rgb(153, 153, 153);
+    opacity: .75;
+  }
+  :-ms-input-placeholder { 
+    color: rgb(153, 153, 153);
+    opacity: .75;
+  }
+  :-moz-placeholder { 
+    color: rgb(153, 153, 153);
+    opacity: .75;
+  }
+
+form li + li {
+  margin-top: .5em;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 75%;
+    margin-bottom: .5em;
+}
+
+input {
+    padding: .5em;
+    text-align: center;
+    border: 1px solid #404040;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-color: #404040;
+    transform: scale(1.05);
+}
+
+textarea {
+    vertical-align: top;
+    height: 6em;
+}
+
+.btn {
+    display: inline-block;
+    margin: .75em .5em .5em .5em;
+    padding: 1em 1.5em;
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+textarea,
+input,
+.btn {
+    border-radius: 5px;
+}
+
+.contact-btn{
+    background-color: #404040;
+    color: rgb(248, 248, 43);
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+    transform: scale(1.1);
+}
+
+/* screen reader */
+
+.sr-only {
+    position: absolute;
+    left: -10px;
+    height: 1px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.contact-info {
+    font-size: 1em;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 
 /* media queries */
 

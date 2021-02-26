@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact me</title>
+</head>
+<body>
+    <div class="intro">
+        <h1>Hi, I'm Ernie, studying software engineering at Manchester codes </h1>
+</div> 
+
+<div class="content">
+
+    <div class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">portfolio</a></li>
+            <li class="nav-item"><a class="nav-link current-page" href="contact-me.html">contact me</a></li>
+        </ul>
+    </div>
+            
+            <div class="contact-info" id="contact-info">
+                <P>If you would like to contact me, please leave your name and email address and I will be in contact.</P>
+            </div>
+
+            <form id="entry-info" action="/my-handling-form-page" method="post">
+
+                 
+                        <span class="sr-only">Please enter your name</span>
+                        <input class="form-item" type="text" required placeholder="Name" id="name" name="user_name">
+                   
+                    
+                        <span class="sr-only">Enter your email address</span>
+                        <input class="form-item" type="email" required placeholder="Email address" id="mail" name="user_email">
+                    
+                    
+                        <span class="sr-only">Message</span>
+                        <textarea class="form-item" name="user_message" placeholder="Message" id="msg" cols="30" rows="10" name="user_message"></textarea>
+                    
+                
+                        <button class="btn contact-btn" type="submit">Submit</button>
+                        <button class="btn contact-btn" type="reset">clear</button>
+            </form>
+    
+
+    <footer>
+        <a class="nav-link" href="https://twitter.com/emetcalf44?ref_src=twsrc%5Etfw"
+        class="twitter-follow-button" data-show-count="false">follow @Emetcalf44</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
