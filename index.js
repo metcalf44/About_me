@@ -14,9 +14,9 @@ entryInformation.addEventListener('submit', event => {
 
     let updatedHtmlContent = `
         <h2>Thank you, ${firstName}</h2>
-        <p>I will reply to your message as soon as possible to this email: ${emailAddress}</p>
+        <p>I will reply to ${emailAddress} as soon as possible.</p>
         <p>your information will never be shared</p>`
 
-        let ourMainContent = document.querySelector('#contact-info')
+        let ourMainContent = document.querySelector('#form-container')
         ourMainContent.innerHTML = updatedHtmlContent
 })

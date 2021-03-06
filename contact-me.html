@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <title>Contact me</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
 </head>
 <body>
     <div class="intro">
@@ -21,29 +24,31 @@
             <li class="nav-item"><a class="nav-link current-page" href="contact-me.html">contact me</a></li>
         </ul>
     </div>
-            
-            <div class="contact-info" id="contact-info">
-                <P>If you would like to contact me, please leave your name and email address and I will be in contact.</P>
+            <div class="form-container" id="form-container">
+                <div class="contact-info" id="contact-info">
+                    <P>If you would like to contact me, please leave your name and email address and I will be in contact.</P>
+                </div>
+
+                <form id="entry-info" action="/my-handling-form-page" method="post">
+
+                    <ul>
+                        <li class=form-list>
+                            <span class="sr-only">Please enter your name</span>
+                            <input type="text" required placeholder="Name" id="name" name="user_name">
+                    </li>
+                        <li class="form-list">
+                            <span class="sr-only">Enter your email address</span>
+                            <input type="email" required placeholder="Email address" id="mail" name="user_email">
+                        </li>
+                        <li class="form-list">
+                            <span class="sr-only">Message</span>
+                            <textarea name="user_message" placeholder="Message" id="msg" cols="30" rows="10" name="user_message"></textarea>
+                        </li>
+                    </ul>
+                            <button class="btn contact-btn" type="submit">Submit</button>
+                            <button class="btn contact-btn" type="reset">clear</button>
+                </form>
             </div>
-
-            <form id="entry-info" action="/my-handling-form-page" method="post">
-
-                 
-                        <span class="sr-only">Please enter your name</span>
-                        <input class="form-item" type="text" required placeholder="Name" id="name" name="user_name">
-                   
-                    
-                        <span class="sr-only">Enter your email address</span>
-                        <input class="form-item" type="email" required placeholder="Email address" id="mail" name="user_email">
-                    
-                    
-                        <span class="sr-only">Message</span>
-                        <textarea class="form-item" name="user_message" placeholder="Message" id="msg" cols="30" rows="10" name="user_message"></textarea>
-                    
-                
-                        <button class="btn contact-btn" type="submit">Submit</button>
-                        <button class="btn contact-btn" type="reset">clear</button>
-            </form>
     
 
     <footer>
